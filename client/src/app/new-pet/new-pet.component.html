@@ -1,0 +1,27 @@
+<p><strong>Know of a pet needing a home?</strong></p>
+<div class="error-container">
+  <p *ngFor="let error of errors" style="color: red">{{ error }}</p>
+</div>
+<div class="container">
+  <label>Pet Name:</label>
+  <input type="text" [(ngModel)]="pet.name" required minlength="3">
+  
+  <label>Pet Type:</label>
+  <input type="text" [(ngModel)]="pet.type" required minlength="3">
+  
+  <label>Description:</label>
+  <textarea [(ngModel)]="pet.description" required minlength="3"></textarea>
+  
+  <p>Skills (optional):</p>
+  <label>Skill1:</label>
+  <input type="text" [(ngModel)]="pet.skill1">
+  <label>Skill2:</label>
+  <input type="text" [(ngModel)]="pet.skill2">
+  <label>Skill3:</label>
+  <input type="text" [(ngModel)]="pet.skill3">
+
+  <div class="btn-container">
+    <button class="btn" (click)="submitPetClicked()">Add Pet</button>
+    <button class="btn" [routerLink]="['/']">Cancel</button>
+  </div>
+</div>

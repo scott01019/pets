@@ -1,0 +1,33 @@
+<a [routerLink]="['']">Home</a>
+<p><strong>Details about {{ pet.name }}</strong></p>
+<table>
+  <tr>
+    <td><strong>Pet Type:</strong></td>
+    <td>{{ pet.type }}</td>
+  </tr>
+  <tr>
+    <td><strong>Description:</strong></td>
+    <td>{{ pet.description }}</td>
+  </tr>
+  <tr>
+    <td><strong>Skills:</strong></td>
+    <td>{{ pet.skill1 }}</td>
+  </tr>
+  <tr>
+    <td>  </td>
+    <td>{{ pet.skill2 }}</td>
+  </tr>
+  <tr>
+    <td>  </td>
+    <td>{{ pet.skill3 }}</td>
+  </tr>
+  <tr>
+    <td><strong>Likes:</strong></td>
+    <td>{{ pet.likes }}</td>
+  </tr>
+</table>
+
+<div class="btn-contianer">
+  <button class="btn" (click)="likeButtonClicked()" [disabled]="likeButtonDisabled">Like this pet</button>
+  <button class="btn" (click)="adoptButtonClicked()">Adopt this pet!</button>
+</div>

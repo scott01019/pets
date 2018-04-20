@@ -1,0 +1,9 @@
+td {
+    min-width: 100px;
+    padding: 10px;
+}
+
+.btn {
+    outline: none;
+    border: solid black 1px;
+}

@@ -1,0 +1,36 @@
+<p><strong>Edit this pet</strong></p>
+<div class="error-container">
+  <p *ngFor="let error of errors" style="color: red">{{ error }}</p>
+</div>
+<div class="container">
+  <label>
+    Pet Name:
+    <input type="text" [(ngModel)]="pet.name" required minlength="3">
+  </label>
+  <label>
+    Pet Type:
+    <input type="text" [(ngModel)]="pet.type" required minlength="3">
+  </label>
+  <label>
+    Description:
+    <textarea [(ngModel)]="pet.description" required minlength="3" rows="3" cols="100"></textarea>
+  </label>
+  Skills (optional):
+  <label>
+    Skill1:
+    <input type="text" [(ngModel)]="pet.skill1">
+  </label>
+  <label>
+    Skill2:
+    <input type="text" [(ngModel)]="pet.skill2">
+  </label>
+  <label>
+    Skill3:
+    <input type="text" [(ngModel)]="pet.skill3">
+  </label>
+
+  <div class="btn-container">
+    <button class="btn" (click)="editPetClicked()">Edit Pet</button>
+    <button class="btn" [routerLink]="['/']">Cancel</button>
+  </div>
+</div>

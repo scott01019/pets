@@ -1,0 +1,44 @@
+* {
+    margin: 10px;
+}
+
+.container {
+    width: 800px;
+    border: solid black 1px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    width: 700px;
+    height: 30px;
+    border-radius: 3px;
+    outline: 0;
+}
+
+textarea {
+    display: block;
+    width: 700px;
+    height: 90px;
+    border-radius: 3px;
+    outline: 0;
+}
+
+.error-container {
+    color: red;
+    padding: 10px;
+}
+
+.error-container p {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    outline: none;
+    border: solid black 1px;
+}
